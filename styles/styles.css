@@ -24,7 +24,6 @@ nav a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color1);
 }
 
 
@@ -40,7 +39,7 @@ float:right;}
 
 p {padding: 0;}
 
-main {max-width: 840px;}
+
 
 aside {
     position:relative;
@@ -56,13 +55,8 @@ aside h2 {
     top: 2px;
     left: 67px;
 }
-footer {
-    margin-top: 15px;
-    border-top: 1px solid black;
-    text-align: center;
-}
 
-header,footer {
+header,footer, .grid{
     max-width : 840px;
     margin: 0 auto;
 }
@@ -82,7 +76,11 @@ aside {
   grid-row: 1/2;
 }
 
-
+footer {
+    margin-top: 15px;
+    border-top: 1px solid black;
+    text-align: center;
+}
 
 /* Class Selectors*/
 .box{
@@ -94,6 +92,6 @@ aside {
     
 }
 .box a{
-    color:var(--color1)
+    color:var(--color1);
 }
 
