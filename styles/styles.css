@@ -11,13 +11,25 @@
 
 
 }
-nav {background-color:var(--background-color); padding: 10px;}
+nav {background-color:var(--background-color);
+     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;}
 
-nav a {color: var(--color1);
-display: block;
-padding: 20px;}
+nav a {
+    color: var(--color1);
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color1);
+}
 
-h1 {color: var(--color1);}
+
+h1 {color: var(--color2);
+border-bottom: 1px solid black;}
 
 main img {width: 150px;
 height: auto;
@@ -50,6 +62,28 @@ footer {
     text-align: center;
 }
 
+header,footer {
+    max-width : 840px;
+    margin: 0 auto;
+}
+
+.grid{
+    display:grid;
+    align-items: center;
+}
+ main{ grid-column: 2/3;
+  margin: 1rem;
+}
+    
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+
+
 /* Class Selectors*/
 .box{
     margin : 1rem;
@@ -62,3 +96,4 @@ footer {
 .box a{
     color:var(--color1)
 }
+

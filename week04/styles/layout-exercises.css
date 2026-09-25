@@ -21,20 +21,23 @@ div {
     height: 200px;
 }
 
-.flex {
+.flex {display:flex;
     background-color: #aba;
-    /* write declarations here */
+    justify-content: center;
+    align-items: center;
 
 }
 
-.grid {
+.grid {display:grid;
     background-color: #abb;
-    /* enter declarations here */
+    place-items:center;
+    
 
 }
 
-.container2 {
-    /* write declarations here */
+.container2 {display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
 
 }
 
@@ -43,13 +46,14 @@ div {
     height: 100px;
 }
 
-.container3 {
-    /* write declarations here */
+.container3 {display: grid;
+    grid-template-columns: repeat(3,1fr);
+ 
 
 }
 
 .columns-3 {
-    /* write declaration here */
+    grid-column: 1/4;
 
 }
 
