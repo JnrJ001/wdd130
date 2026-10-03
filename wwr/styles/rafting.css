@@ -36,7 +36,7 @@
 
  h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
  }
 
  nav, p, section, article {
@@ -55,16 +55,6 @@
     height: auto;
  }
 
- h1{
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff
- }
 
  .hero article{
     position: absolute;
@@ -84,6 +74,138 @@
     width: 125px;
  }
 
+ .hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1 {
+    margin: 16px;
+}
+
+h3{
+   text-align: center;
+   margin: 16px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    display: block;
+    margin: 1rem auto;
+}
+
+form {
+    max-width: 500px;
+    margin: 16px auto;
+    padding: 16px;
+    background-color: #eee;
+    border-radius: 8px;
+    display: grid;
+    gap: 16px;
+}
+
+form div {
+    display: grid;
+    gap: 4px;
+}
+
+input, textarea, button {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+}
+
+fieldset {
+    display: grid;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+    color: var(--primary-color);
+}
+
+fieldset div,
+form label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px;
+}
+
+.contact-grid iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.contact-grid form {
+    max-width: none;
+    margin: 0;
+}
+
+.contact-team {
+    background-color: #f4f4f4;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.contact-team-row {
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-team-row figure {
+    width: 30%;
+}
+
+button {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
  .socialmedia img {
     width: 32px;
     height: 32px;
