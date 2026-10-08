@@ -44,7 +44,10 @@ p {padding: 0;}
 aside {
     position:relative;
     width: 20rem;
-    text-align: center;}
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;    
+}
  aside img{
     width: 200px;
     height: auto;
@@ -69,12 +72,6 @@ header,footer, .grid{
   margin: 1rem;
 }
     
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
 
 footer {
     margin-top: 15px;
