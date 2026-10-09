@@ -4,6 +4,7 @@
     --accent2-color: #f4a300;     
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
+    --page-color: #dfe8ec;
 }
 
 * {
@@ -27,6 +28,7 @@
  body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--page-color);
  }
 
  header, main, footer {
@@ -34,10 +36,20 @@
     margin: 0 auto;
  }
 
+ main, footer {
+    background-color: #fff;
+}
+
  h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
  }
+
+ h2{ font-size: 1.5rem;
+ }
+
+ .hero h1 { font-size: 2rem;
+}
 
  nav, p, section, article {
     margin: 16px;
@@ -62,8 +74,7 @@
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: rgba(44, 44, 44, 0.7);
     color: #fff;
     left: 0;
     margin: 0;
@@ -238,20 +249,20 @@ header nav a {
  
 }
 
-.history {
+.history, .welcome {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 16px;
    align-items: center;
 }
 
-.history h2{
+.history h2, .welcome h2{
    grid-column: 1/4;
    text-align: center;
 }
 
 
-.history img {
+.history img, .welcome img {
     width: 100%;
     height: auto;
 }
@@ -280,12 +291,63 @@ header nav a {
     text-align: center;
 }
 
+.featured figure{
+    width: 28%;
+}
+
+.book-trip {
+    text-align: center;
+}
+
+.book-trip a {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.book-trip a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.trips-intro {
+    text-align: center;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid #999;
+
+}
+
+.trip img {
+    width: 300px;
+    height: 200px;
+}
+
+
+.trip h2 {
+    text-align: left;
+    margin: 0 0 8px 0;
+}
+
+.trip p {
+    margin: 8px 0;
+    padding: 0;
+}
 
 footer{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-top: 15px;
    border-top: 1px solid black;
    text-align: center;
 }
